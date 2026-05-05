@@ -1,6 +1,7 @@
 # Trade ETL Case Study
 
-This repository contains a cloud-native trade ETL solution for the case study. It simulates trade generation, processes trade events with Apache Beam, applies validation and versioning rules, stores valid and rejected records separately, and provides orchestration and infrastructure scaffolding for GCP.
+Thousands of trades are generated and transmitted to a central store daily. The organization wants to modernize its data infrastructure to support real-time analytics, compliance, and reporting. You are tasked with designing and implementing a robust, scalable ETL pipeline that ingests, processes, validates, and stores trade data using
+cloud-native tools.
 
 ## Solution Summary
 
