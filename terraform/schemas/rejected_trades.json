@@ -1,0 +1,24 @@
+[
+  {"name": "trade_id", "type": "STRING", "mode": "REQUIRED"},
+  {"name": "version", "type": "INTEGER", "mode": "NULLABLE"},
+  {"name": "reason", "type": "STRING", "mode": "NULLABLE"},
+  {"name": "rejected_at", "type": "TIMESTAMP", "mode": "NULLABLE"},
+  {
+    "name": "payload",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {"name": "trade_id", "type": "STRING", "mode": "NULLABLE"},
+      {"name": "portfolio", "type": "STRING", "mode": "NULLABLE"},
+      {"name": "counterparty", "type": "STRING", "mode": "NULLABLE"},
+      {"name": "instrument", "type": "STRING", "mode": "NULLABLE"},
+      {"name": "quantity", "type": "INTEGER", "mode": "NULLABLE"},
+      {"name": "price", "type": "FLOAT", "mode": "NULLABLE"},
+      {"name": "version", "type": "INTEGER", "mode": "NULLABLE"},
+      {"name": "trade_date", "type": "DATE", "mode": "NULLABLE"},
+      {"name": "maturity_date", "type": "DATE", "mode": "NULLABLE"},
+      {"name": "updated_at", "type": "TIMESTAMP", "mode": "NULLABLE"},
+      {"name": "status", "type": "STRING", "mode": "NULLABLE"}
+    ]
+  }
+]
