@@ -48,7 +48,12 @@ cloud-native tools.
    python scripts/generate_sample_data.py --output data/trades.jsonl --count 25 --seed 7
    ```
 
-4. Run the local batch pipeline:
+   or
+   
+   ```bash
+   py scripts/generate_sample_data.py --output data/trades.json --count 25 --seed 7
+   ```
+5. Run the local batch pipeline:
 
    ```bash
    python -m src.trade_etl.pipeline ^
@@ -57,7 +62,11 @@ cloud-native tools.
      --valid_output_path output/valid_trades ^
      --rejected_output_path output/rejected_trades
    ```
+or 
 
+```bash
+py -m src.trade_etl.pipeline --input_path data/trades.json --existing_trades_path data/existing_trades.json --valid_output_path output/valid_trades --rejected_output_path output/rejected_trades
+```
 5. Run tests:
 
    ```bash
